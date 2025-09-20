@@ -1,0 +1,13 @@
+<?php
+// Create a range of numbers from 200 to 250
+$numbers = range(200, 250);
+
+// Filter numbers divisible by 4
+$result = array_filter($numbers, function($n) {
+    return $n % 4 == 0;
+});
+
+// Display as comma-separated string
+echo implode(",", $result);
+?>
+

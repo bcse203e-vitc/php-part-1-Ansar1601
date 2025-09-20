@@ -1,0 +1,18 @@
+<?php
+$Color = array('A' => 'Blue', 'B' => 'Green', 'c' => 'Red');
+
+function change_case($array, $case = 'lower') {
+    if ($case == 'lower') {
+        return array_map('strtolower', $array);
+    } else {
+        return array_map('strtoupper', $array);
+    }
+}
+
+echo "Values are in lower case.<br>";
+print_r(change_case($Color, 'lower'));
+
+echo "<br><br>Values are in upper case.<br>";
+print_r(change_case($Color, 'upper'));
+?>
+

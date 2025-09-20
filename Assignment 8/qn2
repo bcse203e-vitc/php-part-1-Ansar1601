@@ -1,0 +1,12 @@
+<?php
+$color = array('white', 'green', 'red');
+
+// Part 1: Display colors separated by commas
+echo implode(", ", $color) . ",<br>";
+
+// Part 2: Display colors as a list
+foreach ($color as $c) {
+    echo "• " . $c . "<br>";
+}
+?>
+

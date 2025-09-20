@@ -1,0 +1,16 @@
+<?php
+$x = array(1, 2, 3, 4, 5);
+
+// Print original array
+var_dump($x);
+
+// Remove element at index 3 (value = 4)
+unset($x[3]);
+
+// Reindex the array
+$x = array_values($x);
+
+// Print updated array
+var_dump($x);
+?>
+

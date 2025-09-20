@@ -1,0 +1,11 @@
+<?php
+$color = array(4 => 'white', 6 => 'green', 11 => 'red');
+
+// Method 1: Using reset()
+echo reset($color);  // Output: white
+
+// Method 2: Using array_values()
+$values = array_values($color);
+echo $values[0];     // Output: white
+?>
+
